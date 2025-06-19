@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Technology Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <h2>Login</h2>
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button id="submit-login">Login</button>
+            <div id="login-error"></div>
+        </div>
+    </div>
+    <div id="app-content" style="display:none;">
+        <nav class="navbar">
+            <div class="nav-title">Web Technology Quiz</div>
+            <div class="nav-user" id="nav-user"></div>
+        </nav>
+        <div class="main-content">
+            <aside class="sidebar">
+                <h3>Quiz Details</h3>
+                <div id="sidebar-details">
+                    <div>Total Questions: <span id="total-questions"></span></div>
+                    <div>Remaining: <span id="remaining-questions"></span></div>
+                    <div>Current: <span id="current-question"></span></div>
+                </div>
+            </aside>
+            <div class="quiz-container">
+                <h1>Web Technology Quiz</h1>
+                <div id="quiz-box">
+                    <div id="question"></div>
+                    <div id="options"></div>
+                    <button id="next-btn" disabled>Next</button>
+                </div>
+                <div id="result-box" style="display:none;"></div>
+            </div>
+        </div>
+    </div>
+    <script src="quiz.js"></script>
+</body>
+</html>
